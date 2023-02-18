@@ -14,3 +14,14 @@ To run this script, you'll need to have Python 3 and the following Python librar
 You can install these libraries using pip:
 
 ```! pip install pandas requests beautifulsoup4```
+
+
+## Usage
+
+To use this script, simply run the currency_scraper.py file in your Python environment:
+
+```python currency_scraper.py```
+
+This will retrieve the exchange rates for a default date range (from January 1, 2022 to November 30, 2022) and save the results to a file named exchange_rate_chf.csv.
+
+If you want to specify a different date range or currency code, you can modify the variables in the script accordingly.
