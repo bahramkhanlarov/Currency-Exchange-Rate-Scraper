@@ -2,9 +2,9 @@
 
 ![Chropleth](https://github.com/bkhan1820/Currency-Exchange-Rate-Scraper/blob/main/photos/apps.4865.9007199266244244.8a1b6114-110d-4101-abbc-e2fbbc92cb6a.png)
 
-In this article, I explain how you can scrape daily currency exchange rates from the XE website and saves the data to a CSV file with 2 different methods. The script retrieves exchange rates for a specified range of dates and filters the results to only include rates for a specific currency (in this case, EUR).
+In this article, I explain how you can scrape daily currency exchange rates from the XE website and saves the data to a CSV file. The script retrieves exchange rates for a specified range of dates and filters the results to only include rates for a specific currency (in this case, EUR).
 
-In the first method the code you provided is an example of web scraping, as it retrieves data from a website (in this case, https://www.xe.com/currencytables/) and extracts the relevant information from the HTML content. The pd.read_html() function used in the code is specifically designed for parsing HTML tables, which is a common technique used in web scraping. By iterating over a range of dates, the script is able to scrape data from the website for each day in the specified range, and save the results in a structured format for further analysis.
+The provided code is an example of web scraping, as it retrieves data from a website (in this case, https://www.xe.com/currencytables/) and extracts the relevant information from the HTML content. The pd.read_html() function used in the code is specifically designed for parsing HTML tables, which is a common technique used in web scraping. By iterating over a range of dates, the script is able to scrape data from the website for each day in the specified range, and save the results in a structured format for further analysis.
 
 
 ## Requirements
