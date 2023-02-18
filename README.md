@@ -67,7 +67,27 @@ end_date = date(2022, 11, 30)
 ````
 df = pd.DataFrame()
 ````
-6. 
+6. Iterate over each date in the date range and scrape the exchange rate data for that date using the pd.read_html function. The function takes a URL as an argument, which is generated using the date and a base URL. The function returns a list of tables, and we select the first table in the list using [0]. We add a new column to the DataFrame called 'Date', which contains the date of the exchange rate data.
+
+`````
+for single_date in daterange(start_date, end_date):
+    dfs = pd.read_html(f'https://www.xe.com/currencytables/?from=CHF&date={single_date.strftime("%Y-%m-%d")}')[0]
+    dfs['Date'] = single_date.strftime("%Y-%m-%d")
+    df = df.append(dfs)
+`````
+
+7. Define the column names for the DataFrame
+
+````
+columns = ['Currency code', 'Currency name', 'Units per CHF', 'CHF per Unit', 'Date']
+`````
+
+8. Select only the rows of the DataFrame where the currency is EUR, and save the resulting DataFrame to a CSV file called 'exchange_rate_chf.csv'.
+
+ `````
+df_chf = df.loc[df['Currency'] == 'EUR']
+df_chf.to_csv('exchange_rate_chf.csv')
+`````
 
 
 ## License
