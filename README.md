@@ -2,9 +2,12 @@
 
 ![Chropleth](https://github.com/bkhan1820/Currency-Exchange-Rate-Scraper/blob/main/photos/apps.4865.9007199266244244.8a1b6114-110d-4101-abbc-e2fbbc92cb6a.png)
 
-In this article, I explain how you can scrape daily currency exchange rates from the XE website and saves the data to a CSV file. The script retrieves exchange rates for a specified range of dates and filters the results to only include rates for a specific currency (in this case, EUR).
+In this article, I explain how you can scrape daily currency exchange rates from the XE website and saves the data to a CSV file with 2 different methods. The script retrieves exchange rates for a specified range of dates and filters the results to only include rates for a specific currency (in this case, EUR).
+
+In the first method we will use the requests library to make a GET request to the website and retrieve the raw HTML content, and the BeautifulSoup library to parse the HTML and extract the table rows and columns. It then uses a for loop to iterate over the rows and append the data to a Pandas DataFrame. Finally, it selects only the rows with the desired currency code (EUR) and exports them to a CSV file.
 
 ## Installation
+
 To run this script, you'll need to have Python 3 and the following Python libraries installed:
 
 - pandas
