@@ -25,7 +25,7 @@ To use this script, simply run the currency_scraper.py file in your Python envir
 
 ```python exchange_rate_scraper.py ```
 
-This will retrieve the exchange rates for a default date range (from January 1, 2022 to November 30, 2022) and save the results to a file named exchange_rate_chf.csv.
+This will retrieve the exchange rates for a default date range (from January 1, 2022 to February 18, 2023) and save the results to a file named exchange_rate_chf.csv.
 
 
 ![Chropleth](https://github.com/bkhan1820/Currency-Exchange-Rate-Scraper/blob/main/photos/Screenshot%202023-02-18%20at%2022.40.31.png)
@@ -59,7 +59,7 @@ def daterange(start_date, end_date):
 
 ````
 start_date = date(2022, 1, 1)
-end_date = date(2022, 11, 30)
+end_date = date(2023, 2, 18)
 ````
 
 5. Create an empty pandas DataFrame to store the exchange rate data.
