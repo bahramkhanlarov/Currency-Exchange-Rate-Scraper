@@ -34,10 +34,41 @@ If you want to specify a different date range or currency code, you can modify t
 
 ## Code explanation
 
-Import the pandas library and the datetime module, which provides classes for working with dates and times.
+1. Import the pandas library and the datetime module, which provides classes for working with dates and times.
 
-```import pandas as pd
-import datetime```
+```
+import pandas as pd
+import datetime
+```
+
+2. Import the timedelta and date classes from the datetime module. These classes will be used to generate a range of dates between a start date and an end date.
+
+````
+from datetime import timedelta, date
+````
+
+3. Define a function called daterange that takes a start date and an end date as arguments and yields a sequence of dates between the two. The function uses the timedelta and range functions to generate the sequence of dates.
+
+```
+def daterange(start_date, end_date):
+    for n in range(int ((end_date - start_date).days)):
+        yield start_date + timedelta(n)
+````
+
+4. Set the starting and ending dates for the period for which exchange rates will be scraped.
+
+````
+start_date = date(2022, 1, 1)
+end_date = date(2022, 11, 30)
+````
+
+5. Create an empty pandas DataFrame to store the exchange rate data.
+
+````
+df = pd.DataFrame()
+````
+6. 
+
 
 ## License
 
