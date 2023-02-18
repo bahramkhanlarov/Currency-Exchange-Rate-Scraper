@@ -13,4 +13,4 @@ To run this script, you'll need to have Python 3 and the following Python librar
 
 You can install these libraries using pip:
 
-```pip install pandas requests beautifulsoup4```
+```! pip install pandas requests beautifulsoup4```
