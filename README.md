@@ -91,7 +91,7 @@ df_chf.to_csv('exchange_rate_chf.csv')
 
 ## Practical use cases:
 
-Some practical use cases specifically for exchange data for Euro to CHF:
+Some practical use cases specifically for exchange data for CHF-Euro:
 
 Financial modeling: The exchange rate data can be used in financial models to forecast the future exchange rates between Euro and CHF. This can be useful for businesses that have cross-border transactions between the two currencies.
 
